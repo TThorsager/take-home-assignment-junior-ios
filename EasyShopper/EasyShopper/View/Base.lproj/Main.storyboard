@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Product Table View Controller-->
         <scene sceneID="Edl-uK-3gw">
             <objects>
-                <tableViewController id="f6P-2N-mw8" sceneMemberID="viewController">
+                <tableViewController id="f6P-2N-mw8" customClass="ProductTableViewController" customModule="EasyShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OVH-Dm-67a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct Product: Decodable {
+struct ProductManager: Decodable {
+    var productDataUrl = "https://run.mocky.io/v3/4e23865c-b464-4259-83a3-061aaee400ba"
+    
     var bacode: Int
     var costPrice: Int
     var description: String
@@ -17,4 +19,14 @@ struct Product: Decodable {
     var name: String
     var retailPrice: Int
     #warning("Complete this data structure")
+    
+    func fetchProduct() {
+        let urlString = productDataUrl
+        preformRequest(urlString: urlString)
+    }
+    
+    func preformRequest(urlString: String) {
+        
+    }
+    
 }

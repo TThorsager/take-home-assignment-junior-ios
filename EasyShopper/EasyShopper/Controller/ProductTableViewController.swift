@@ -9,6 +9,8 @@
 import UIKit
 
 class ProductTableViewController: UITableViewController {
+    
+//    var productManager = ProductManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
