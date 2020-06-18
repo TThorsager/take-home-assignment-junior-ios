@@ -8,33 +8,25 @@
 
 import UIKit
 
-#warning("""
-The initial viewcontroller should show the shopping basket.
-It should contain a 'Plus' button for adding new items to the basket.
-It should contain a 'Clear' button for removing all items in the basket.
-""")
+#warning("The initial viewcontroller should show the shopping basket.")
 
-class BasketViewController: UITableViewController {
-    
+class BasketViewController: UIViewController {
+        
     var basket = [Product]()
     
-    
-    @IBAction func clearContentOfBasket(_ sender: UIBarButtonItem) {
-        basket = []
-    }
-    
-    @IBOutlet weak var basketTableView: UITableView!
-    
-class BasketViewController: UIViewController {
-
     @IBOutlet weak var sumOfPriceLabel: UILabel!
     @IBOutlet weak var basketTableView: UITableView!
     
+    @IBAction func clearContentOfBasket(_ sender: UIBarButtonItem) {
+        basket = []
+        sumOfPriceLabel.text = "0"
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        basketTableView.delegate = self
-        basketTableView.dataSource = self
-
+        sumOfPriceLabel.text = "0"
+        
     }
 }

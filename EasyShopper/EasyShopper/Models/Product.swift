@@ -13,10 +13,10 @@ struct Prodcuts: Decodable {
 }
 
 struct Product: Decodable {
-    var id: String
-    var image_url: URL
-    var name: String
-    var retail_price: Int
+    var id: String?
+    var image_url: URL?
+    var name: String?
+    var retail_price: Int?
     
 }
 

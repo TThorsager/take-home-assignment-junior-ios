@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="123.5" width="414" height="772.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="97" id="O0e-X6-GTl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="97" id="O0e-X6-GTl" customClass="ProductTableViewCell" customModule="EasyShopper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O0e-X6-GTl" id="eCq-GB-LdT">
@@ -108,9 +108,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="productImage" destination="RLi-3b-bWy" id="U5q-PR-zpw"/>
-                                            <outlet property="productName" destination="usx-QS-hgd" id="Dex-NG-J2K"/>
-                                            <outlet property="productPrice" destination="T6H-Kr-vAy" id="WUA-eR-fs9"/>
+                                            <outlet property="productImage" destination="RLi-3b-bWy" id="q5j-Ig-dgV"/>
+                                            <outlet property="productNameLabel" destination="usx-QS-hgd" id="YeD-0u-Dfr"/>
+                                            <outlet property="productPriceLabel" destination="T6H-Kr-vAy" id="U8R-gU-J8m"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -142,6 +142,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="basketTableView" destination="F3Y-Q5-fzf" id="KKX-YU-lWc"/>
+                        <outlet property="sumOfPriceLabel" destination="4om-h4-I7R" id="cxk-lR-TSo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,7 +158,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="97" id="Vwe-iZ-yr0">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="97" id="Vwe-iZ-yr0" customClass="ProductTableViewCell" customModule="EasyShopper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vwe-iZ-yr0" id="Tuq-0f-Pgb">
@@ -210,9 +211,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="productImage" destination="IP1-A6-kSG" id="9e1-0B-zOk"/>
-                                    <outlet property="productName" destination="Zqy-Pc-MhD" id="MgO-zw-HDC"/>
-                                    <outlet property="productPrice" destination="uIP-NG-UyP" id="9qM-Jf-OBI"/>
+                                    <outlet property="productImage" destination="IP1-A6-kSG" id="TLc-DQ-0It"/>
+                                    <outlet property="productNameLabel" destination="Zqy-Pc-MhD" id="cUT-hd-ett"/>
+                                    <outlet property="productPriceLabel" destination="uIP-NG-UyP" id="nHQ-zU-Uwb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -39,11 +39,22 @@ class ProductTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
-
+        let product = products[indexPath.row]
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as? ProductTableViewCell
+        
+//        do {
+//          let imageUrl = product.image_url
+//            let data = try Data(contentsOf: imageUrl)
+//            cell?.productImage.image = UIImage(data: data)
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+        
+        cell?.productNameLabel.text = product.name
+        cell?.productPriceLabel.text = "\(product.retail_price)"
 
-        return cell
+        return cell!
     }
     
 
