@@ -16,9 +16,11 @@ It should contain a 'Clear' button for removing all items in the basket.
 
 class BasketViewController: UIViewController {
 
+    @IBOutlet weak var sumOfPriceLabel: UILabel!
+    @IBOutlet weak var basketTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 
     }
 }

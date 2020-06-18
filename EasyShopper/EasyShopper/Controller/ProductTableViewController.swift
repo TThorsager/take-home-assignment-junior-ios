@@ -9,7 +9,9 @@
 import UIKit
 
 class ProductTableViewController: UITableViewController {
-
+    
+    @IBOutlet var productTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
