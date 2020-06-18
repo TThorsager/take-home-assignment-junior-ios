@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		317447952492AE7000862E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447942492AE7000862E28 /* AppDelegate.swift */; };
 		317447972492AE7000862E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447962492AE7000862E28 /* SceneDelegate.swift */; };
-		317447992492AE7000862E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447982492AE7000862E28 /* ViewController.swift */; };
+		317447992492AE7000862E28 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447982492AE7000862E28 /* BasketViewController.swift */; };
 		3174479C2492AE7000862E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3174479A2492AE7000862E28 /* Main.storyboard */; };
 		3174479E2492AE7200862E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3174479D2492AE7200862E28 /* Assets.xcassets */; };
 		317447A12492AE7200862E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3174479F2492AE7200862E28 /* LaunchScreen.storyboard */; };
@@ -17,13 +17,15 @@
 		317447AC2492AEE500862E28 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447AB2492AEE500862E28 /* DemoData.swift */; };
 		317447AF2492B6DC00862E28 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447AE2492B6DC00862E28 /* Product.swift */; };
 		317447B12492B78A00862E28 /* ShoppingBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447B02492B78A00862E28 /* ShoppingBasket.swift */; };
+		49CF9745249AB05F0073B87E /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF9744249AB05F0073B87E /* ProductTableViewController.swift */; };
+		49CF9747249AB1370073B87E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF9746249AB1370073B87E /* ProductTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		317447912492AE7000862E28 /* EasyShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		317447942492AE7000862E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317447962492AE7000862E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		317447982492AE7000862E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		317447982492AE7000862E28 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		3174479B2492AE7000862E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3174479D2492AE7200862E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317447A02492AE7200862E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		317447AB2492AEE500862E28 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		317447AE2492B6DC00862E28 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		317447B02492B78A00862E28 /* ShoppingBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBasket.swift; sourceTree = "<group>"; };
+		49CF9744249AB05F0073B87E /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		49CF9746249AB1370073B87E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +68,13 @@
 		317447932492AE7000862E28 /* EasyShopper */ = {
 			isa = PBXGroup;
 			children = (
-				317447AD2492B6C600862E28 /* Models */,
-				317447A82492AE8E00862E28 /* DemoData */,
 				317447942492AE7000862E28 /* AppDelegate.swift */,
 				317447962492AE7000862E28 /* SceneDelegate.swift */,
-				317447982492AE7000862E28 /* ViewController.swift */,
-				3174479A2492AE7000862E28 /* Main.storyboard */,
+				49CF9743249AAD5A0073B87E /* Controller */,
+				49CF9742249AAD470073B87E /* View */,
+				317447AD2492B6C600862E28 /* Models */,
+				317447A82492AE8E00862E28 /* DemoData */,
 				3174479D2492AE7200862E28 /* Assets.xcassets */,
-				3174479F2492AE7200862E28 /* LaunchScreen.storyboard */,
 				317447A22492AE7200862E28 /* Info.plist */,
 			);
 			path = EasyShopper;
@@ -93,6 +96,25 @@
 				317447B02492B78A00862E28 /* ShoppingBasket.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		49CF9742249AAD470073B87E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3174479A2492AE7000862E28 /* Main.storyboard */,
+				3174479F2492AE7200862E28 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49CF9743249AAD5A0073B87E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				317447982492AE7000862E28 /* BasketViewController.swift */,
+				49CF9744249AB05F0073B87E /* ProductTableViewController.swift */,
+				49CF9746249AB1370073B87E /* ProductTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,11 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				317447AA2492AEAA00862E28 /* NetworkServiceMock.swift in Sources */,
-				317447992492AE7000862E28 /* ViewController.swift in Sources */,
+				317447992492AE7000862E28 /* BasketViewController.swift in Sources */,
+				49CF9747249AB1370073B87E /* ProductTableViewCell.swift in Sources */,
 				317447952492AE7000862E28 /* AppDelegate.swift in Sources */,
 				317447B12492B78A00862E28 /* ShoppingBasket.swift in Sources */,
 				317447972492AE7000862E28 /* SceneDelegate.swift in Sources */,
 				317447AC2492AEE500862E28 /* DemoData.swift in Sources */,
+				49CF9745249AB05F0073B87E /* ProductTableViewController.swift in Sources */,
 				317447AF2492B6DC00862E28 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

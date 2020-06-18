@@ -9,6 +9,12 @@
 import Foundation
 
 struct Product: Decodable {
+    var bacode: Int
+    var costPrice: Int
+    var description: String
     var id: String
+    var imageUrl: String
+    var name: String
+    var retailPrice: Int
     #warning("Complete this data structure")
 }

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BasketViewController.swift
 //  EasyShopper
 //
 //  Created by Morten Bek Ditlevsen on 11/06/2020.
@@ -14,7 +14,7 @@ It should contain a 'Plus' button for adding new items to the basket.
 It should contain a 'Clear' button for removing all items in the basket.
 """)
 
-class ViewController: UIViewController {
+class BasketViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

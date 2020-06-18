@@ -9,3 +9,11 @@
 import Foundation
 
 #warning("Feel free to model a ShoppingBasket any way you like")
+
+struct ShoppingBasket {
+    var bacode: Int
+    var id: String
+    var imageUrl: String
+    var name: String
+    var retailPrice: Int
+}
