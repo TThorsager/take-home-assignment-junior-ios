@@ -25,6 +25,11 @@ class BasketViewController: UITableViewController {
     
     @IBOutlet weak var basketTableView: UITableView!
     
+class BasketViewController: UIViewController {
+
+    @IBOutlet weak var sumOfPriceLabel: UILabel!
+    @IBOutlet weak var basketTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

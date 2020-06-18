@@ -15,6 +15,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMR-jl-Zrn">
+                                <rect key="frame" x="20" y="88" width="374" height="30.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DKK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-g3-25X">
+                                        <rect key="frame" x="340" y="5" width="34" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4om-h4-I7R">
+                                        <rect key="frame" x="300.5" y="5" width="34.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq1-Zt-dw8">
+                                        <rect key="frame" x="0.0" y="5" width="104.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dS4-g3-25X" secondAttribute="trailing" id="81k-jR-sHi"/>
+                                    <constraint firstItem="Pq1-Zt-dw8" firstAttribute="leading" secondItem="MMR-jl-Zrn" secondAttribute="leading" id="E6u-f4-1qk"/>
+                                    <constraint firstItem="dS4-g3-25X" firstAttribute="top" secondItem="MMR-jl-Zrn" secondAttribute="top" constant="5" id="HW0-2b-cbw"/>
+                                    <constraint firstAttribute="bottom" secondItem="4om-h4-I7R" secondAttribute="bottom" constant="5" id="J0k-Ce-JOh"/>
+                                    <constraint firstAttribute="bottom" secondItem="dS4-g3-25X" secondAttribute="bottom" constant="5" id="LuP-2y-xlw"/>
+                                    <constraint firstItem="Pq1-Zt-dw8" firstAttribute="top" secondItem="MMR-jl-Zrn" secondAttribute="top" constant="5" id="Mxk-bk-cGa"/>
+                                    <constraint firstItem="4om-h4-I7R" firstAttribute="top" secondItem="MMR-jl-Zrn" secondAttribute="top" constant="5" id="Wf9-mU-jsO"/>
+                                    <constraint firstItem="dS4-g3-25X" firstAttribute="centerY" secondItem="MMR-jl-Zrn" secondAttribute="centerY" id="XJE-bQ-v75"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pq1-Zt-dw8" secondAttribute="bottom" constant="5" id="eA4-hM-6mw"/>
+                                    <constraint firstItem="4om-h4-I7R" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Pq1-Zt-dw8" secondAttribute="trailing" constant="196" id="rH4-g3-eDH"/>
+                                    <constraint firstItem="dS4-g3-25X" firstAttribute="leading" secondItem="4om-h4-I7R" secondAttribute="trailing" constant="5" id="xYZ-5U-tEe"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-Q5-fzf">
                                 <rect key="frame" x="0.0" y="123.5" width="414" height="772.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -71,45 +107,14 @@
                                                 <constraint firstItem="5V8-Zt-uMg" firstAttribute="centerY" secondItem="eCq-GB-LdT" secondAttribute="centerY" id="ucl-dZ-2yl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="productImage" destination="RLi-3b-bWy" id="U5q-PR-zpw"/>
+                                            <outlet property="productName" destination="usx-QS-hgd" id="Dex-NG-J2K"/>
+                                            <outlet property="productPrice" destination="T6H-Kr-vAy" id="WUA-eR-fs9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMR-jl-Zrn">
-                                <rect key="frame" x="20" y="88" width="374" height="30.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DKK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-g3-25X">
-                                        <rect key="frame" x="340" y="5" width="34" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4om-h4-I7R">
-                                        <rect key="frame" x="300.5" y="5" width="34.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq1-Zt-dw8">
-                                        <rect key="frame" x="0.0" y="5" width="104.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="dS4-g3-25X" secondAttribute="trailing" id="81k-jR-sHi"/>
-                                    <constraint firstItem="Pq1-Zt-dw8" firstAttribute="leading" secondItem="MMR-jl-Zrn" secondAttribute="leading" id="E6u-f4-1qk"/>
-                                    <constraint firstItem="dS4-g3-25X" firstAttribute="top" secondItem="MMR-jl-Zrn" secondAttribute="top" constant="5" id="HW0-2b-cbw"/>
-                                    <constraint firstAttribute="bottom" secondItem="4om-h4-I7R" secondAttribute="bottom" constant="5" id="J0k-Ce-JOh"/>
-                                    <constraint firstAttribute="bottom" secondItem="dS4-g3-25X" secondAttribute="bottom" constant="5" id="LuP-2y-xlw"/>
-                                    <constraint firstItem="Pq1-Zt-dw8" firstAttribute="top" secondItem="MMR-jl-Zrn" secondAttribute="top" constant="5" id="Mxk-bk-cGa"/>
-                                    <constraint firstItem="4om-h4-I7R" firstAttribute="top" secondItem="MMR-jl-Zrn" secondAttribute="top" constant="5" id="Wf9-mU-jsO"/>
-                                    <constraint firstItem="dS4-g3-25X" firstAttribute="centerY" secondItem="MMR-jl-Zrn" secondAttribute="centerY" id="XJE-bQ-v75"/>
-                                    <constraint firstAttribute="bottom" secondItem="Pq1-Zt-dw8" secondAttribute="bottom" constant="5" id="eA4-hM-6mw"/>
-                                    <constraint firstItem="4om-h4-I7R" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Pq1-Zt-dw8" secondAttribute="trailing" constant="196" id="rH4-g3-eDH"/>
-                                    <constraint firstItem="dS4-g3-25X" firstAttribute="leading" secondItem="4om-h4-I7R" secondAttribute="trailing" constant="5" id="xYZ-5U-tEe"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -204,6 +209,11 @@
                                         <constraint firstItem="Zqy-Pc-MhD" firstAttribute="top" secondItem="Tuq-0f-Pgb" secondAttribute="topMargin" id="x8x-De-Vz3"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="productImage" destination="IP1-A6-kSG" id="9e1-0B-zOk"/>
+                                    <outlet property="productName" destination="Zqy-Pc-MhD" id="MgO-zw-HDC"/>
+                                    <outlet property="productPrice" destination="uIP-NG-UyP" id="9qM-Jf-OBI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
