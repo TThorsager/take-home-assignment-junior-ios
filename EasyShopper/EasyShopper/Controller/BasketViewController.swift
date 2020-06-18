@@ -14,11 +14,22 @@ It should contain a 'Plus' button for adding new items to the basket.
 It should contain a 'Clear' button for removing all items in the basket.
 """)
 
-class BasketViewController: UIViewController {
-
+class BasketViewController: UITableViewController {
+    
+    var basket = [Product]()
+    
+    
+    @IBAction func clearContentOfBasket(_ sender: UIBarButtonItem) {
+        basket = []
+    }
+    
+    @IBOutlet weak var basketTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        basketTableView.delegate = self
+        basketTableView.dataSource = self
 
     }
 }

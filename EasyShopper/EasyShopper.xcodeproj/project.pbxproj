@@ -19,6 +19,7 @@
 		49CF9745249AB05F0073B87E /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF9744249AB05F0073B87E /* ProductTableViewController.swift */; };
 		49CF9747249AB1370073B87E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF9746249AB1370073B87E /* ProductTableViewCell.swift */; };
 		49CF9749249B467D0073B87E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF9748249B467D0073B87E /* Product.swift */; };
+		49CF974B249B61680073B87E /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF974A249B61680073B87E /* ProductManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		49CF9744249AB05F0073B87E /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		49CF9746249AB1370073B87E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		49CF9748249B467D0073B87E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		49CF974A249B61680073B87E /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				49CF9748249B467D0073B87E /* Product.swift */,
+				49CF974A249B61680073B87E /* ProductManager.swift */,
 				317447B02492B78A00862E28 /* ShoppingBasket.swift */,
 			);
 			path = Models;
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				317447AA2492AEAA00862E28 /* NetworkServiceMock.swift in Sources */,
+				49CF974B249B61680073B87E /* ProductManager.swift in Sources */,
 				317447992492AE7000862E28 /* BasketViewController.swift in Sources */,
 				49CF9747249AB1370073B87E /* ProductTableViewCell.swift in Sources */,
 				317447952492AE7000862E28 /* AppDelegate.swift in Sources */,
